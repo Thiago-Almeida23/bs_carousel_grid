@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto Bootstrap</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <style>
+      .carousel-item img {
+        max-width: 100%;
+        height: auto;
+        max-height: 500px;
+      }
+
+      .custom-image {
+        width: 100%;
+        height: 200px; /* Defina a altura desejada para todas as imagens */
+        object-fit: cover; /* Isso manterá a proporção original da imagem */
+      }
+
+      /* Adicionando margem entre o carrossel e o grid */
+      .custom-margin {
+        margin-top: 20px; /* Ajuste conforme necessário para o espaçamento desejado */
+      }
+
+      /* Novo estilo para o carrossel ocupar 100% da largura */
+      .full-width-carousel {
+        width: 100%;
+      }
+
+      .carousel-caption {
+        color: #e2d4d4;
+        text-shadow: 5px 5px 5px rgba(1, 1, 1, 1);
+      }
+    </style>
+  </head>
+
+  <body>
+<div id="carousel-example" class="carousel carousel-fade slide full-width-carousel" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div data-bs-interval="4000" class="carousel-item active">
+      <img class="d-block w-100 custom-carousel-img" src="images/sw01.jpeg" />
+      <div class="carousel-caption">
+        <h2>Força Clone 99</h2>
+      </div>
+    </div>
+    <div data-bs-interval="4000" class="carousel-item">
+      <img class="d-block w-100 custom-carousel-img" src="images/sw02.jpg" />
+      <div class="carousel-caption">
+        <h2>Luminara Unduli & Barriss Offee</h2>
+      </div>
+    </div>
+    <div data-bs-interval="4000" class="carousel-item">
+      <img class="d-block w-100 custom-carousel-img" src="images/sw03.jpg" />
+      <div class="carousel-caption">
+        <h2>Jedi & Bo Katan</h2>
+      </div>
+    </div>
+  </div>
+  <button data-bs-target="#carousel-example" data-bs-slide="prev" class="carousel-control-prev" type="button">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button data-bs-target="#carousel-example" data-bs-slide="next" class="carousel-control-next" type="button">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carousel-example" class="active" data-bs-slide-to="0"></button>
+    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#carousel-example" data-bs-slide-to="2"></button>
+  </div>
+</div>
+
+    <div class="container-fluid custom-margin">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex">
+          <div class="card">
+            <img
+              src="images/sw04.jpg"
+              class="card-img-top custom-image"
+              alt="Imagem 4"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Mestre Yoda & Clones</h5>
+              <p class="card-text" style="max-height: 140px; overflow: hidden;">
+                Yoda e 3 clones - Tenente Thire, Jek e Rys - escapam para a superfície da lua em uma cápsula de escape. Enquanto a fragata da República deixa o sistema, Asajj Ventress aponta para a nave fugindo como um sinal da fraqueza da República.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex">
+          <div class="card">
+            <img
+              src="images/sw05.jpg"
+              class="card-img-top custom-image"
+              alt="Imagem 5"/>
+            <div class="card-body">
+              <h5 class="card-title">Esquadrão D</h5>
+              <p class="card-text" style="max-height: 140px; overflow: hidden;">
+                D-Squad era um esquadrão militar que serviu à República Galáctica durante as Guerras Clônicas. O esquadrão consistia em quatro droides astromecânicos: R2-D2, QT-KT, U9-C4 e M5-BZ, além de um droide de poço da série DUM designado como WAC-47, e foi colocado sob o comando do Coronel Meebur Gascon.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4 d-flex">
+          <div class="card">
+            <img
+              src="images/sw06.jpg"
+              class="card-img-top custom-image"
+              alt="Imagem 6"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Asajj Ventress</h5>
+              <p class="card-text" style="max-height: 140px; overflow: hidden;">Ventress is a former member of the Nightsisters,  who was sold into slavery as a child, and was subsequently taken in as a Jedi Padawan by the Jedi Master who saved her. Following her master's death in battle, Ventress falls to the dark side of the Force and becomes Count Dooku's informal Sith apprentice and personal assassin.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
